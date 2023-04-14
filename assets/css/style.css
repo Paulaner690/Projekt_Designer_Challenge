@@ -1,0 +1,278 @@
+@font-face {
+    font-family: roboto;
+    src: url(../Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: roboto-bold;
+    src: url(../Roboto/Roboto-Bold.ttf);
+}
+
+:root{
+    --text-color: #0b0c17;
+    --red-color: #ff3571;
+    --background-color: #dddddd;
+    --blue-color: #3C30FF;
+    --white-color: #FFF;
+    --black-color: #000;
+    --bottom-space: 2rem;
+    --left-space: 11rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------GENERAL STYLES----------------------- */
+html{
+    font-size: 62.5%;
+    font-family: "roboto", Arial, Helvetica, sans-serif;
+    margin-left: var(--left-space);
+}
+
+img{
+    max-width: 100%;
+}
+
+h1{
+    font-size: 6rem;
+    font-family: "roboto-bold", Arial, Helvetica, sans-serif;
+    margin-bottom: var(--bottom-space);
+}
+
+h2{
+    font-size: 5rem;
+    font-family: "roboto-bold", Arial, Helvetica, sans-serif;
+    margin-bottom: 5rem;
+}
+
+h3{
+    font-size: 2rem;
+    font-family: "roboto-bold", Arial, Helvetica, sans-serif;
+    margin-bottom: -6px;
+}
+
+h4{
+    font-size: 1.7rem;
+    font-family: "roboto-bold", Arial, Helvetica, sans-serif;
+    margin-bottom: var(--bottom-space);
+}
+
+p{
+    font-size: 1.6rem;
+    color: var(--text-color);
+    line-height: 3rem;
+}
+
+/* -----------------HEADER-STYLE-------------------------- */
+header{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+/* ---LOGO--- */
+.logo{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0 0 -2.5rem;
+}
+
+.logo img{
+    height: 4rem;
+    position: fixed;
+    top: 2rem;
+    left: 3rem;
+}
+/* ----TEXT---- */
+.designer{
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.designer div{
+    width: 40vw;
+}
+
+.designer p:nth-of-type(1){
+    font-size: 1.8rem;
+    margin-bottom: 170px;
+}
+
+.rocket{
+    height: 30px;
+}
+
+.designer span{
+    color: var(--red-color);
+}
+/* ----IMG-ANIMATION--- */
+.space{
+    height: 80vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -2rem;
+}
+
+.spaceman{
+    height: 70vh;
+    z-index: 10;
+    position: absolute;
+    right: 0px;
+    top: 40px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+	0%, 100% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-20px);
+	}
+}
+/* ------------------MAIN-STYLE-------------------------- */
+/* ---------------------IMAGES--------------------------- */
+.images{
+    height: 100vh;
+    width: 100vw;
+    margin-left: -10rem;
+    display: flex;
+    align-items: center;
+}
+
+/* --------------------IDEA-SECTION--------------------- */
+.idea{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.idea h2{
+    width: 400px;
+    line-height: 6rem;
+}
+
+.idea h2 img{
+    height: 6rem;
+}
+
+.idea p{
+    width: 600px;
+    margin-right: 20rem;
+}
+
+/* -------------------STICKING-SECTION------------------ */
+.sticking{
+    height: 50vh;
+    width: 40vw;
+}
+/* -------------------CHALLENGE-SECTION----------------- */
+.challenge{
+    height: 75vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.challenge article{
+    width: 450px;
+    display: flex;
+}
+
+.challenge img{
+    height: 30px;
+    margin-right: 20px;
+}
+/* -------------------LETSGO-SECTION-------------------- */
+/* ----section-header------- */
+.letsgo-header{
+    text-align: center;
+    margin: 0 29% 80px 29%;
+}
+
+/* -----section-articles---- */
+.letsgo article{
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.letsgo article div{
+    width: 500px;
+    text-align: start;
+    margin: 0 60px 0 -4.5rem;
+}
+
+.letsgo article h2{
+    color: var(--background-color);
+    font-size: 6rem;
+}
+
+.emoji{
+    height: 50px;
+    margin-bottom: var(--bottom-space);
+}
+
+.people{
+    width: 40%;
+    margin-right: 8rem;
+}
+
+/* --------------------LIKE-SECTION--------------------- */
+.like{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.like p{
+    margin-bottom: 4rem;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#email {
+	text-align: center;
+	width: 30vw;
+	height: 7vh;
+	border: none;
+	border-radius: 5px;
+	margin-bottom: 5vh;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#submit {
+	width: 15vw;
+	font-size: 15px;
+	height: 7vh;
+	color: #fff;
+	background: rgb(255, 53, 113);
+	border: none;
+	border-radius: 5px;
+	margin-bottom: 10vh;
+}
+
+#submit:hover {
+	background: linear-gradient(90deg, rgb(255, 53, 113), rgb(64, 12, 221));
+} 
+/* ----------------------FOOTER------------------------- */
+footer{
+    padding: 30px 0 10px 0;
+    display: flex;
+}
+
+footer img{
+    height: 2rem;
+    padding-left: 1rem;
+}
