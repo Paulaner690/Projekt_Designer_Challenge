@@ -265,6 +265,7 @@ form {
 }
 
 #submit:hover {
+    cursor: pointer;
 	background: linear-gradient(90deg, rgb(255, 53, 113), rgb(64, 12, 221));
 } 
 
